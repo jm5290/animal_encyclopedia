@@ -1,0 +1,123 @@
+body {
+  margin: 0;
+  font-family: 'Roboto', sans-serif;
+  background-color: #f4f4f9;
+  color: #333;
+}
+
+.App {
+  text-align: center;
+  padding: 20px;
+}
+
+.App-header {
+  background-color: #1e1e2f;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-start;
+  font-size: calc(10px + 2vmin);
+  color: white;
+  padding-top: 50px;
+}
+
+h1 {
+  font-size: 3em;
+  margin-bottom: 20px;
+}
+
+form {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 40px;
+}
+
+input {
+  padding: 10px;
+  font-size: 1.2em;
+  border: 1px solid #ccc;
+  border-radius: 4px 0 0 4px;
+  outline: none;
+  width: 300px;
+}
+
+button {
+  padding: 10px 20px;
+  font-size: 1.2em;
+  border: none;
+  border-radius: 0 4px 4px 0;
+  background-color: #007bff;
+  color: white;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+button:hover {
+  background-color: #0056b3;
+}
+
+.results {
+  background-color: white;
+  color: black;
+  font-family: 'DM Sans', sans-serif;
+  padding: 30px;
+  border-radius: 10px;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+  text-align: left;
+  width: 80%;
+  max-width: 800px;
+  margin: 0 auto;
+  margin-bottom: 40px;
+  font-size: 14px;
+}
+
+.results h2 {
+  text-align: center;
+  margin-bottom: 30px;
+  font-size: 2em;
+}
+
+.results p {
+  font-size: 1.1em;
+  margin: 15px 0;
+}
+
+.results p strong {
+  display: block;
+  font-size: 1.2em;
+  margin-bottom: 5px;
+}
+
+/* Adjust image size */
+.results img {
+  width: 100%; /* Set image width to 100% of its container */
+  height: auto; /* Maintain aspect ratio */
+  max-width: 100%; /* Ensure the image does not exceed the container width */
+  display: block; /* Remove any inline-block spacing */
+}
+
+@media (max-width: 600px) {
+  input {
+    width: 200px;
+  }
+
+  button {
+    padding: 10px;
+    font-size: 1em;
+  }
+
+  .results {
+    padding: 20px;
+  }
+
+  .results h2 {
+    font-size: 1.5em;
+  }
+
+  .results p {
+    font-size: 1em;
+  }
+}
